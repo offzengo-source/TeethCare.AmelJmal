@@ -1,0 +1,6 @@
+{
+  "name": "Cabinet Dentaire Dr Amel Jemal",
+  "description": "Cabinet dentaire haut de gamme du Dr Amel Jemal à Ariana. Soins dentaires d'excellence, esthétique du sourire, détartrage et urgences.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

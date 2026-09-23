@@ -24,12 +24,47 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#FAFAF8] text-[#2A2A2A] font-sans antialiased selection:bg-[#A8D5C8]/40 selection:text-[#18392B]">
+    <div className="min-h-screen text-[#2A2A2A] font-sans antialiased selection:bg-[#A8D5C8]/40 selection:text-[#18392B] relative overflow-x-hidden">
+      {/* Global Fixed Background: Femme souriante aux belles dents blanches */}
+      <div className="fixed inset-0 pointer-events-none -z-20 overflow-hidden">
+        <img
+          src="/woman_hero_banner.jpg"
+          alt="Femme aux dents blanches qui sourit - Cabinet dentaire Dr Amel Jemal"
+          className="w-full h-full object-cover object-[78%_center] md:object-[82%_center] filter brightness-[1.02] contrast-[1.03]"
+          referrerPolicy="no-referrer"
+        />
+        {/* Editorial soft paper wash allowing the smiling woman to remain visible while guaranteeing text readability */}
+        <div className="absolute inset-0 bg-[#FAFAF8]/75 backdrop-blur-[0.5px]" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#FAFAF8]/95 via-[#FAFAF8]/70 to-[#FAFAF8]/30 md:from-[#FAFAF8]/90 md:via-[#FAFAF8]/60 md:to-transparent/20" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#FAFAF8]/40 via-transparent to-[#FAFAF8]/80" />
+      </div>
+
+      {/* Editorial Top Masthead Strip */}
+      <div className="relative z-50 bg-white/80 backdrop-blur-md border-b border-black/[0.06] text-[11px] text-[#2A2A2A]/70 py-1.5 px-4 hidden md:block">
+        <div className="max-w-7xl mx-auto flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            <span className="font-semibold text-[#2E5E54] uppercase tracking-wider">Cabinet Dentaire d'Excellence</span>
+            <span className="text-black/30">|</span>
+            <span>Ariana Centre · Grand Tunis</span>
+          </div>
+          <div className="flex items-center gap-4">
+            <span className="text-[#C9A876] font-medium">★ 5.0 sur Google Reviews</span>
+            <span className="text-black/30">|</span>
+            <a
+              href={`tel:${PRACTICAL_INFO.phone.replace(/\s/g, '')}`}
+              className="hover:text-[#5B9B8E] transition-colors font-medium"
+            >
+              Urgences & RDV : {PRACTICAL_INFO.phone}
+            </a>
+          </div>
+        </div>
+      </div>
+
       {/* Sticky Header */}
       <Header onOpenBooking={() => handleOpenBooking()} />
 
-      {/* Main Content Sections */}
-      <main id="main-content" className="relative">
+      {/* Main Content Container with Editorial Frame */}
+      <main id="main-content" className="relative z-10 max-w-7xl mx-auto border-x border-black/[0.04] bg-white/40 backdrop-blur-[1px]">
         {/* 1. Hero Section with Liquid Search Bar */}
         <Hero
           onSelectService={(svc) => setSelectedService(svc)}

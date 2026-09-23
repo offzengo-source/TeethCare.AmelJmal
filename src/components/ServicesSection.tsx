@@ -51,17 +51,19 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
       <div className="absolute bottom-10 right-0 w-80 h-80 rounded-full bg-[#7FA8C9]/15 blur-3xl -z-10 pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
-        <div className="max-w-2xl mx-auto text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#A8D5C8]/25 text-[#2E5E54] text-xs font-semibold tracking-wide uppercase mb-3">
-            Soins & Pratique clinique
+        {/* Section Header in Editorial Style */}
+        <div className="max-w-3xl mx-auto text-center mb-16">
+          <div className="flex items-center justify-center gap-3 text-[11px] font-semibold tracking-widest uppercase text-[#2E5E54] mb-3">
+            <span className="w-8 h-[1px] bg-[#5B9B8E]/40" />
+            <span>02 / Catalogue des Soins & Pratique Clinique</span>
+            <span className="w-8 h-[1px] bg-[#5B9B8E]/40" />
           </div>
           <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-[#2A2A2A] mb-4">
             Des soins dentaires sur-mesure, dispensés avec douceur
           </h2>
-          <p className="text-base text-[#2A2A2A]/70 leading-relaxed">
-            Chaque bouche est unique. Nous privilégions une approche conservatrice et préventive
-            en utilisant des technologies de pointe pour préserver votre capital dentaire.
+          <p className="text-base text-[#2A2A2A]/70 leading-relaxed max-w-2xl mx-auto">
+            Chaque bouche est unique. Nous privilégions une approche conservatrice, préventive et biomimétique
+            en utilisant des technologies de pointe pour préserver durablement votre capital dentaire.
           </p>
         </div>
 

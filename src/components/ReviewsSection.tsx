@@ -25,8 +25,9 @@ export const ReviewsSection: React.FC = () => {
         {/* Section Header & Google 5.0 Banner */}
         <div className="flex flex-col lg:flex-row items-start lg:items-end justify-between gap-8 mb-14">
           <div>
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#C9A876]/20 text-[#8B6B38] text-xs font-semibold tracking-wide uppercase mb-3">
-              Expérience patient
+            <div className="flex items-center gap-3 text-[11px] font-semibold tracking-widest uppercase text-[#8B6B38] mb-3">
+              <span>03 / Avis & Expérience Patients</span>
+              <span className="w-8 h-[1px] bg-[#C9A876]/40" />
             </div>
             <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-[#2A2A2A] mb-3">
               Ce que disent nos patients

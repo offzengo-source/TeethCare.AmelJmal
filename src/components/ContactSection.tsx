@@ -136,8 +136,9 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ preselectedServi
           {/* Direct Info & Quick Action Buttons Column (5 cols) */}
           <div className="lg:col-span-5 space-y-8">
             <div>
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#A8D5C8]/25 text-[#2E5E54] text-xs font-semibold tracking-wide uppercase mb-3">
-                Prendre contact
+              <div className="flex items-center gap-3 text-[11px] font-semibold tracking-widest uppercase text-[#2E5E54] mb-3">
+                <span>06 / Prise de Rendez-vous & Contact</span>
+                <span className="w-8 h-[1px] bg-[#5B9B8E]/40" />
               </div>
               <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-[#2A2A2A] mb-4">
                 À votre écoute pour un rendez-vous serein

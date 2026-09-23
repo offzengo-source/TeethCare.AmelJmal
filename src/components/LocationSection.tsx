@@ -9,10 +9,11 @@ export const LocationSection: React.FC = () => {
   return (
     <section id="localisation" className="py-24 md:py-32 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
+        {/* Section Header in Editorial Style */}
         <div className="max-w-2xl mb-14 text-left">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#7FA8C9]/20 text-[#2C5E8A] text-xs font-semibold tracking-wide uppercase mb-3">
-            Accès & Coordonnées
+          <div className="flex items-center gap-3 text-[11px] font-semibold tracking-widest uppercase text-[#2C5E8A] mb-3">
+            <span>05 / Accès & Coordonnées</span>
+            <span className="w-8 h-[1px] bg-[#7FA8C9]/40" />
           </div>
           <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-[#2A2A2A] mb-3">
             Venir au cabinet à Ariana

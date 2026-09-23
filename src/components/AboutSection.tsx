@@ -1,6 +1,7 @@
 import React from 'react';
 import { ShieldCheck, Heart, Eye, Award, GraduationCap, Sparkles, CheckCircle2 } from 'lucide-react';
 import doctorPhoto from '../assets/images/dr_amel_portrait_1788804747385.jpg';
+import operatoryPhoto from '../assets/images/cabinet_operatoire.jpg';
 
 export const AboutSection: React.FC = () => {
   return (
@@ -38,12 +39,30 @@ export const AboutSection: React.FC = () => {
                 </div>
               </div>
             </div>
+
+            {/* Cabinet Operatory Showcase Card */}
+            <div className="mt-8 p-3.5 rounded-2xl bg-white/90 backdrop-blur-md border border-[#A8D5C8]/40 shadow-sm flex items-center gap-3.5 max-w-sm mx-auto lg:max-w-none">
+              <div className="w-16 h-14 rounded-xl overflow-hidden flex-shrink-0 border border-black/5 bg-[#FAFAF8]">
+                <img
+                  src={operatoryPhoto}
+                  alt="Salle d'opérations et fauteuil dentaire moderne du cabinet"
+                  className="w-full h-full object-cover"
+                  referrerPolicy="no-referrer"
+                />
+              </div>
+              <div className="text-left">
+                <div className="text-xs font-bold text-[#2A2A2A]">Plateau opératoire de pointe</div>
+                <div className="text-[11px] text-[#5B9B8E] font-medium">Fauteuil chirurgical & stérilisation certifiée</div>
+                <div className="text-[10px] text-[#2A2A2A]/50">Un cadre médical sécurisant et apaisant</div>
+              </div>
+            </div>
           </div>
 
           {/* Text & Philosophy Column (7 cols) */}
           <div className="lg:col-span-7">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#A8D5C8]/25 text-[#2E5E54] text-xs font-semibold tracking-wide uppercase mb-4">
-              À propos de votre praticienne
+            <div className="flex items-center gap-3 text-[11px] font-semibold tracking-widest uppercase text-[#2E5E54] mb-4">
+              <span>04 / Rencontre avec votre Praticienne</span>
+              <span className="w-8 h-[1px] bg-[#5B9B8E]/40" />
             </div>
             
             <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-[#2A2A2A] mb-6 leading-tight">
